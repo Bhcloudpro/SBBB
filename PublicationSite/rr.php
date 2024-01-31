@@ -563,7 +563,7 @@ var Ethicfile11 = EthicfileInput11.files.length > 0 ? EthicfileInput11.files[0] 
         }
   else{
 
-    alert('<?= $filePath; ?>');
+    //alert('<?= $filePath; ?>');
     formData.append('file11', null);
   }
 
@@ -601,7 +601,7 @@ var Ethicfile11 = EthicfileInput11.files.length > 0 ? EthicfileInput11.files[0] 
         contentType: false,
         processData: false,
         success: function(data) {
-          alert(data);
+          //alert(data);
             displayfromdb();
         }
     });
@@ -624,7 +624,7 @@ var Ethicfile11 = EthicfileInput11.files.length > 0 ? EthicfileInput11.files[0] 
 			dsplay:1,
 			},
 				success:function(d){
-         alert('successs'); 
+         //alert('successs'); 
           $('#div1').fadeOut('slow').load('internationaljournal11.php').fadeIn("slow");
 			}
 			

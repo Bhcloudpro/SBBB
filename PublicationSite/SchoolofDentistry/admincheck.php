@@ -17,7 +17,7 @@ else{
 
 	
 	
-	if(($_POST['email']=="admin123@admin.com") && ($_POST['password']=="123456")){
+	if(($_POST['email']=="admin123@admin.com") && ($_POST['password']=="123456789")){
 		$_SESSION['admins']=$user;
 		header('Location:adminpage.php');
 	}

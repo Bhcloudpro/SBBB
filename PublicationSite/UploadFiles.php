@@ -192,7 +192,7 @@ if(!isset($_GET['q1']) && !isset($_SESSION['b']) && isset($_SESSION['admins'])){
  
 <script type="text/javascript">
 	$("#Insertdata").click(function(e) {
-    alert("aaa");
+   // alert("aaa");
 e.preventDefault();
 
   var fileInput = $('#under')[0];

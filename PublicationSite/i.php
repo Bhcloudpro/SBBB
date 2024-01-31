@@ -286,14 +286,14 @@ var formData = new FormData();
         }
   else{
 
-    alert('<?= $filePath; ?>');
+    //alert('<?= $filePath; ?>');
     formData.append('conferencefile11', null);
   }
 
 
 
 
-    alert(PublishYear);
+    //alert(PublishYear);
                     $.ajax({
                         type : "POST",
                         url : "conference_teacher_update.php",
@@ -302,7 +302,7 @@ var formData = new FormData();
         processData: false,
 						data:formData, 			
                   success : function(data) {
-                    alert(data);
+                   // alert(data);
 				// $("#div1").fadeOut('slow');
 			  //   $("#div1").fadeIn('slow');
 				// //$("#msg").html(data);

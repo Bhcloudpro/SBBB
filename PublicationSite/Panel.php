@@ -738,9 +738,10 @@ elseif($_GET['w2']==5){
     <option value="Prosthodontics">Prosthodontics</option>
     <option value="Oral and Maxillofacial Surgery">Oral and Maxillofacial Surgery</option>
 	<option value="Conservative">Conservative</option>
-	<option value="P.O.P">P.O.P</option>
+	<option value="Orthodontics">Orthodontics</option>
 	<option value="Oral Diagnosis">Oral Diagnosis</option>
-	<option value="Pediatrics">Pediatrics</option>
+	<option value="Pedodontics and Community Oral Health">	
+Pedodontics and Community Oral Health</option>
 	 </select>
   <!-- <input type="text" name="Department" placeholder="General Dentistry" value="" id="Department"> -->
     </label>

@@ -180,7 +180,7 @@ $sql333="Select Teacher_ID from teacherinfo where TeacherEmail="."'".$_SESSION['
 $result333=mysqli_query($conn,$sql333) or die(mysqli_error($conn));
 $row333=mysqli_fetch_array($result333);
 
-$sql222="Select ch.CheckerID from checkerinfo ch,teacherinfo ti, teacher t where ch.Department='$_POST[department]' 
+$sql222="Select ch.CheckerID from checkerinfo ch,teacherinfo ti where ch.Department='$_POST[department]' 
 and ti.TeacherEmail="."'".$_SESSION['a']."'";
 $result222=mysqli_query($conn,$sql222) or die(mysqli_error($conn));
 $row222=mysqli_fetch_array($result222);	
@@ -277,7 +277,7 @@ $sql_insert_teacher="insert into teacher(TeacherID,Certificate,AcademicTitle,Dep
 DateofLastTitle,DiplomaTitle,MasterTitle,PHDTitle,NumberofMasterStudent,NumberofPHD,NumberofDiploma,GoogleScholar,ORCID,CV,Promotion,
 Teacher_ID,CheckerID) values('$randomString','$_POST[certificate]','$_POST[title]','$_POST[department]','$_POST[speciality]','$_POST[date]','$_POST[dresearch]','$_POST[mresearch]','$_POST[presearch]',
 '$_POST[mstudent]','$_POST[pstudent]','$_POST[dstudent]','$_POST[googlescholar]','$_POST[orcid]',"."'<a href=$filedest target=_blank>view</a>',"."'<a href=$filedest1 target=_blank>view</a>',"."$row333[0],$row222[0])";
-echo $sql_insert_teacher;
+//echo $sql_insert_teacher;
 mysqli_query($conn,$sql_insert_teacher) or die(mysqli_error($conn));
 	
 }   

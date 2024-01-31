@@ -190,7 +190,7 @@ $sql_insert_teacher="
 insert into books(BookTitle,CoAuthor,PublishYear,Place,Publisher,ISBN,DOI,WebLink,File,BookType,CheckerID,Teacher_ID,MainAuthor) values('$_POST[booktitle]','$q5','$_POST[year111]','$_POST[publicationplace]',
 '$_POST[publicationorganization]','$_POST[bookisbn]','$_POST[bookdoi]','$_POST[booklink]',"."'<a href=$filedest target=_blank>view</a>',"."'$_POST[booktype]',$row222[0],$row333[0],'$row_teacher11[1]')";
 mysqli_query($conn,$sql_insert_teacher) or die(mysqli_error($conn));
-	echo $sql_insert_teacher;
+	//echo $sql_insert_teacher;
 }
 		   
 	?>

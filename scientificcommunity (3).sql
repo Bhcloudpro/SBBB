@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2024 at 05:58 PM
+-- Generation Time: Jan 31, 2024 at 06:59 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -307,6 +307,13 @@ CREATE TABLE `books` (
   `MainAuthor` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `books`
+--
+
+INSERT INTO `books` (`BookID`, `BookTitle`, `CoAuthor`, `PublishYear`, `Place`, `Publisher`, `ISBN`, `DOI`, `WebLink`, `File`, `BookType`, `CheckerID`, `Teacher_ID`, `MainAuthor`) VALUES
+(40, 'DNA', '1', '2021-12-30', 'Algeria', 'Willey', '6789007654', '123456', 'www.yahoo.com', '<a href=uploadsBooks/65ba774448d326.97518737.pdf target=_blank>view</a>', 'Book Chapter', 1, 74, 'Miran Baban');
+
 -- --------------------------------------------------------
 
 --
@@ -360,6 +367,13 @@ CREATE TABLE `conference` (
   `MainAuthor` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `conference`
+--
+
+INSERT INTO `conference` (`ConferenceID`, `ResearchTitle`, `CoAuthor`, `ConferenceOrganizer`, `ConferenceName`, `ConferenceLocation`, `WebLink`, `PublishYear`, `DOI`, `File`, `Venue`, `ConfType`, `CheckerID`, `Teacher_ID`, `MainAuthor`) VALUES
+(19, 'General Computer', '2', 'IEEE', 'Computer Conference11', 'Andorra', 'www.yahoo.com', '2021-11-29', '87654', '<a href=uploadsEthics/65ba7a4f400c45.54038877.pdf target=_blank>view</a>', 'London', 'Presenter', 1, 74, 'Miran Baban');
+
 -- --------------------------------------------------------
 
 --
@@ -406,6 +420,13 @@ CREATE TABLE `inters` (
   `MainAuthor` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `inters`
+--
+
+INSERT INTO `inters` (`JournalID`, `TeacherName`, `ResearchTitle`, `RegisterationDate`, `ApprovalDate`, `EthicalNumber`, `JournalName`, `PublishingYear`, `Impactfactor`, `Volume`, `Issue`, `Pages`, `place`, `DOI`, `Weblink`, `File`, `Ethics`, `Publisher`, `PaperType`, `indexing`, `Keyword`, `Teacher_ID`, `CheckerID`, `MainAuthor`) VALUES
+(136, '1', 'Computer11', '2021-10-29', '2021-10-29', 'hello', 'miran baban', '2020-11-29', '0.1', '1', '1', '22-23', 'Jamaica', '345435', 'www.yahoo.com', '<a href=uploads/65ba75cd4463b5.23001277.pdf target=_blank>view</a>', '<a href=uploadsEthics/65ba75cd448361.75236123.pdf target=_blank>view</a>', 'Springer1', 'Review', 'None Scopus', 'Compiler, AI', 74, 1, 'Miran Baban');
+
 -- --------------------------------------------------------
 
 --
@@ -437,6 +458,13 @@ CREATE TABLE `journals` (
   `MainAuthor` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `journals`
+--
+
+INSERT INTO `journals` (`JournalID`, `TeacherName`, `ResearchTitle`, `RegisterationDate`, `ApprovalDate`, `EthicalNumber`, `JournalName`, `PublishingYear`, `Impactfactor`, `Volume`, `Issue`, `Pages`, `DOI`, `Weblink`, `File`, `Ethics`, `Publisher`, `PaperType`, `Keyword`, `Teacher_ID`, `CheckerID`, `MainAuthor`) VALUES
+(148, '1', 'Computer Science', '2023-11-30', '2021-11-26', '43433', 'Computer Science', '2021-10-29', '0.2', '2', '2', '21- 25', '345435', 'www.yahoo.com', '<a href=uploads/65ba6f0422e508.85217340.pdf target=_blank>view</a>', '<a href=uploadsEthics/65ba6e14b66600.49919532.pdf target=_blank>view</a>', 'Springer11', 'Review Article', 'Database', 74, 1, 'Miran Baban');
+
 -- --------------------------------------------------------
 
 --
@@ -464,6 +492,13 @@ CREATE TABLE `teacher` (
   `CheckerID` int(3) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `teacher`
+--
+
+INSERT INTO `teacher` (`TeacherID`, `Certificate`, `AcademicTitle`, `Department`, `Speciality`, `DateofLastTitle`, `DiplomaTitle`, `MasterTitle`, `PHDTitle`, `NumberofMasterStudent`, `NumberofPHD`, `NumberofDiploma`, `GoogleScholar`, `ORCID`, `CV`, `Promotion`, `Teacher_ID`, `CheckerID`) VALUES
+(17, 'Master of Science', 'Lecturer', 'Periodontics', 'Computer Science', '2016-11-16', 'nill', 'Computer Science', 'nill', '0', '0', '0', 'https://scholar.google.com/citations?user=bks6jxMAAAAJ&hl=en', 'https://orcid.org/0000-0003-1368-6374', '<a href=CV/65ba6b5a2323c5.40750982.pdf target=_blank>view</a>', '<a href=uploadsPromotion/65ba6bdc5c5f44.96240432.pdf target=_blank>view</a>', 74, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -479,6 +514,13 @@ CREATE TABLE `teacherinfo` (
   `Department` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `teacherinfo`
+--
+
+INSERT INTO `teacherinfo` (`Teacher_ID`, `TeacherName`, `TeacherEmail`, `TeacherPassword`, `TeacherMobile`, `Department`) VALUES
+(74, 'Miran Baban', 'miran.mohammed@univsul.edu.iq', 'e10adc3949ba59abbe56e057f20f883e', '07701547929', NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -493,6 +535,13 @@ CREATE TABLE `uploadfiles` (
   `Undergraduate` text DEFAULT NULL,
   `Proposal` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `uploadfiles`
+--
+
+INSERT INTO `uploadfiles` (`FileID`, `Paper`, `MSc`, `PhD`, `Undergraduate`, `Proposal`) VALUES
+(4, '<a href=ScientificFiles/65ba7f984abdc7.11523115.pdf target=_blank>view</a>', '<a href=ScientificFiles/65ba7f984a77c3.56623194.pdf target=_blank>view</a>', '<a href=ScientificFiles/65ba7f984aa932.29063511.pdf target=_blank>view</a>', '<a href=ScientificFiles/65ba7f984a59d7.72922367.pdf target=_blank>view</a>', '<a href=ScientificFiles/65ba7f984ad080.58699932.pdf target=_blank>view</a>');
 
 --
 -- Indexes for dumped tables
@@ -582,7 +631,7 @@ ALTER TABLE `apps_countries`
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `BookID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `BookID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `checkerinfo`
@@ -594,7 +643,7 @@ ALTER TABLE `checkerinfo`
 -- AUTO_INCREMENT for table `conference`
 --
 ALTER TABLE `conference`
-  MODIFY `ConferenceID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `ConferenceID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `data`
@@ -606,31 +655,31 @@ ALTER TABLE `data`
 -- AUTO_INCREMENT for table `inters`
 --
 ALTER TABLE `inters`
-  MODIFY `JournalID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
+  MODIFY `JournalID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=137;
 
 --
 -- AUTO_INCREMENT for table `journals`
 --
 ALTER TABLE `journals`
-  MODIFY `JournalID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=148;
+  MODIFY `JournalID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=149;
 
 --
 -- AUTO_INCREMENT for table `teacher`
 --
 ALTER TABLE `teacher`
-  MODIFY `TeacherID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `TeacherID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `teacherinfo`
 --
 ALTER TABLE `teacherinfo`
-  MODIFY `Teacher_ID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
+  MODIFY `Teacher_ID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 
 --
 -- AUTO_INCREMENT for table `uploadfiles`
 --
 ALTER TABLE `uploadfiles`
-  MODIFY `FileID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `FileID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables

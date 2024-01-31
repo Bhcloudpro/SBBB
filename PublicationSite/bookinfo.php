@@ -512,7 +512,7 @@ var booktype=$("#booktype").val();
 var EthicfileInput = $('#bookfile')[0];
 var bookfile = EthicfileInput.files[0];
 var dn=1;
-alert(bookfile);
+//alert(bookfile);
 
 if (
   booktitle === "" ||
@@ -544,7 +544,7 @@ var formData = new FormData();
     formData.append('booktype', booktype);
     formData.append('bookfile', bookfile);
 
-alert(year111);
+//alert(year111);
 
 // AJAX code to send data to php file.
         $.ajax({

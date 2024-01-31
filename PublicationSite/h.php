@@ -242,7 +242,7 @@ var bookisbn11=$("#bookisbn11").val();
 var bookdoi11=$("#bookdoi11").val();
 var booklink11=$("#booklink11").val();
 var booktype11=$("#booktype11").val();
-alert(year1111);
+//alert(year1111);
 
 
 var EthicfileInput = $('#bookfile11')[0];
@@ -250,7 +250,7 @@ var bookfile11 = EthicfileInput.files.length > 0 ? EthicfileInput.files[0] : nul
 
 
 
-alert(year1111);
+//alert(year1111);
 
 var formData = new FormData();
     formData.append('id', id);
@@ -270,7 +270,7 @@ var formData = new FormData();
         }
   else{
 
-    alert('<?= $filePath; ?>');
+   // alert('<?= $filePath; ?>');
     formData.append('bookfile11', null);
   }
 
@@ -284,7 +284,7 @@ var formData = new FormData();
         processData: false, 			
                   success : function(data) {
 
-                    alert(data);
+                    //alert(data);
 				  displayfromdb();
 					  
         }

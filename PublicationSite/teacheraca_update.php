@@ -89,7 +89,7 @@ $rowcheck=mysqli_fetch_array($result1);
 		GoogleScholar="."'".$r."',
 		ORCID="."'".$s."',"."Promotion="."'<a href=$filedest1 target=_blank>view</a>', 
 		CheckerID=".$tt." where TeacherID="."'".$id."'"; 
-		echo $update;
+		//echo $update;
 		$result=mysqli_query($conn,$update) or die(mysqli_error($conn));
 
 
@@ -176,7 +176,7 @@ $rowcheck=mysqli_fetch_array($result1);
 		ORCID="."'".$s."',
 		CV="."'<a href=$filedest target=_blank>view</a>',
 		CheckerID=".$tt." where TeacherID="."'".$id."'"; 
-		echo $update;
+		//echo $update;
 		$result=mysqli_query($conn,$update) or die(mysqli_error($conn));
 
 	}
@@ -307,7 +307,7 @@ if(in_array($fileextactual1,$allowed1)){
 	ORCID="."'".$s."',
 	CV="."'<a href=$filedest target=_blank>view</a>',"."Promotion="."'<a href=$filedest1 target=_blank>view</a>',
 	CheckerID=".$tt." where TeacherID="."'".$id."'"; 
-	echo $update;
+	//echo $update;
 	$result=mysqli_query($conn,$update) or die(mysqli_error($conn));
 
 
@@ -356,7 +356,7 @@ if (!isset($_FILES['Lastfile11']) && !isset($_FILES['CV11'])){
 	NumberofDiploma="."'".$o."',
 	GoogleScholar="."'".$r."', ORCID="."'".$s."',
 	CheckerID=".$tt." where TeacherID="."'".$id."'"; 
-	echo $update;
+	//echo $update;
 	$result=mysqli_query($conn,$update) or die(mysqli_error($conn));
 
 }

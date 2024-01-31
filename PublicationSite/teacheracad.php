@@ -319,7 +319,7 @@ $result1=mysqli_query($conn,$sql_select_journal) or die(mysqli_error($conn));
  
 <script type="text/javascript">
 	$("#Insertdata").click(function(e) {
-    alert("aaa");
+    //alert("aaa");
 e.preventDefault();
     var certificate=$("#certificate").val();
 	var title=$("#title").val();
@@ -386,7 +386,7 @@ e.preventDefault();
     formData.append('orcid', orcid);
     formData.append('CV', CV);
 
-    alert(Lastfile22);
+   // alert(Lastfile22);
 
     $.ajax({
         url: "teacheraca11.php",
@@ -396,7 +396,7 @@ e.preventDefault();
         processData: false,
         success: function(data) {
 
-          alert(data);
+          //alert(data);
     
             $("#msg").html(data);
             fromhide1();

@@ -443,7 +443,7 @@ var CV11 = fileInputss.files.length > 0 ? fileInputss.files[0] : null;
         }
   else{
 
-    alert('<?= $filePath1; ?>');
+    //alert('<?= $filePath1; ?>');
     formData.append('Lastfile11', null);
   }
 
@@ -468,7 +468,7 @@ var CV11 = fileInputss.files.length > 0 ? fileInputss.files[0] : null;
         }
   else{
 
-    alert('<?= $filePath12; ?>');
+    //alert('<?= $filePath12; ?>');
     formData.append('CV11', null);
   }
 
@@ -483,7 +483,7 @@ var CV11 = fileInputss.files.length > 0 ? fileInputss.files[0] : null;
         contentType: false,
         processData: false,
         success: function(data) {
-          alert(data);
+         // alert(data);
             displayfromdb();
         }
     });

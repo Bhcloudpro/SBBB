@@ -134,7 +134,7 @@ table { margin:10px 0;}
 
 </tr>
 </table>
-<a href=index.php>Go back to home page</a>
+<a href=../index.php>Go back to home page</a>
 </div>
 </body>
 </html>

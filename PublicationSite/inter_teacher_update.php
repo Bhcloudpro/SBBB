@@ -84,7 +84,7 @@ if(isset($_FILES['file11']) && !isset($_FILES['Ethicfile11'])){
   Keyword="."'".$v."',
   File="."'<a href=$filedest target=_blank>view</a>'"." where JournalID=".$id; 
   $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-  echo $update;
+  //echo $update;
 
 }
 
@@ -178,7 +178,7 @@ indexing="."'".$t."',
 Keyword="."'".$v."',
 Ethics="."'<a href=$filedest2 target=_blank>view</a>'"."where JournalID=".$id; 
 $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-echo $update;
+//echo $update;
 
 }
 
@@ -314,7 +314,7 @@ if (isset($_FILES['Ethicfile11']) && isset($_FILES['file11'])){
   Keyword="."'".$v."',
   File="."'<a href=$filedest target=_blank>view</a>',"."Ethics="."'<a href=$filedest2 target=_blank>view</a>'"."where JournalID=".$id; 
   $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-  echo $update;
+  //echo $update;
 
 }
 
@@ -369,7 +369,7 @@ PaperType="."'".$s."',
 indexing="."'".$t."',
 Keyword="."'".$v."'"." where JournalID=".$id; 
 $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-echo $update;
+//echo $update;
 
 }
 

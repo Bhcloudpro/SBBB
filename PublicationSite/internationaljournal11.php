@@ -252,7 +252,7 @@ EthicalNumber,JournalName,PublishingYear,Impactfactor,Volume,Issue,Pages,place,D
 '$_POST[ethicalno]','$_POST[journalname]','$_POST[journalyear]','$_POST[IF]','$_POST[vol]',
 '$_POST[no]','$_POST[pages]','$_POST[country]','$_POST[doi]','$_POST[weblink]',"."'<a href=$filedest target=_blank>view</a>',"."'<a href=$filedest2 target=_blank>view</a>',"."'$_POST[publisher]','$_POST[papertype]','$_POST[indexing]','$_POST[multitext]',$row333[0],$row222[0],'$row_teacher11[1]')";	
 
-echo $sql_insert_teacher;
+//echo $sql_insert_teacher;
 
 mysqli_query($conn,$sql_insert_teacher) or die(mysqli_error($conn));
 
@@ -567,7 +567,7 @@ $row_teacher11=mysqli_fetch_array($result_journal11);
                         id: id
                     }),
                         success : function() {
-					 $(".delete_mem" + id).fadeOut('slow');	//$('#div1').fadeOut('slow').load('journalteach11.php').fadeIn("slow");
+					 $(".delete_mem" + id).fadeOut('slow');	//$('#div1').fadeOut('slow').load('internationaljournal11.php').fadeIn("slow");
 	
                         }
                     });

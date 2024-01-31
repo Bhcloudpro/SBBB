@@ -421,7 +421,7 @@ function goToNewPage() {
   var multitext11=$("#multitext11").val();
   var papertype11=$("#papertype11").val();
 
-  alert(multitext11);
+  //alert(multitext11);
 
   var fileInput = $('#file11')[0];
   var file11 = fileInput.files.length > 0 ? fileInput.files[0] : null;
@@ -452,7 +452,7 @@ var Ethicfile11 = EthicfileInput11.files.length > 0 ? EthicfileInput11.files[0] 
         }
   else{
 
-    alert('<?= $filePath; ?>');
+    //alert('<?= $filePath; ?>');
     formData.append('file11', null);
   }
 
@@ -478,7 +478,7 @@ var Ethicfile11 = EthicfileInput11.files.length > 0 ? EthicfileInput11.files[0] 
         contentType: false,
         processData: false,
         success: function(data) {
-          alert(data);
+         // alert(data);
             displayfromdb();
         }
     });
@@ -501,7 +501,7 @@ var Ethicfile11 = EthicfileInput11.files.length > 0 ? EthicfileInput11.files[0] 
 			dsplay:1,
 			},
 				success:function(d){
-         alert('successs'); 
+        // alert('successs'); 
           $('#div1').fadeOut('slow').load('journalteach11.php').fadeIn("slow");
 			//	$('#sd').fadeOut("slow");
 			

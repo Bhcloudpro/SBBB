@@ -650,7 +650,7 @@ e.preventDefault();
         contentType: false,
         processData: false,
         success: function(data) {
-          alert(data);
+          //alert(data);
             $("#msg").html(data);
             fromhide1();
         }

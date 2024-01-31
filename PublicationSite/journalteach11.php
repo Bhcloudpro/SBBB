@@ -254,7 +254,7 @@ EthicalNumber,JournalName,PublishingYear,Impactfactor,Volume,Issue,Pages,DOI,Web
 '$_POST[ethicalno]','$_POST[journalname]','$_POST[journalyear]','$_POST[IF]','$_POST[vol]',
 '$_POST[no]','$_POST[pages]','$_POST[doi]','$_POST[weblink]',"."'<a href=$filedest target=_blank>view</a>',"."'<a href=$filedest2 target=_blank>view</a>',"."'$_POST[publisher]','$_POST[papertype]','$_POST[multitext]',$row333[0],$row222[0],'$row_teacher11[1]')";	
 
-echo $sql_insert_teacher;
+//echo $sql_insert_teacher;
 
 mysqli_query($conn,$sql_insert_teacher) or die(mysqli_error($conn));
 

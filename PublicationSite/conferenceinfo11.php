@@ -198,7 +198,7 @@ insert into conference(ResearchTitle,CoAuthor,ConferenceOrganizer,ConferenceName
 PublishYear,doi,File,Venue,conftype,CheckerID,Teacher_ID,MainAuthor) values('$_POST[title]','$q5','$_POST[publisher]','$_POST[name]',
 '$_POST[country]','$_POST[weblink]','$_POST[year11]','$_POST[doi]',"."'<a href=$filedest target=_blank>view</a>',"."'$_POST[venue]','$_POST[conftype]',$row222[0],$row333[0],'$row_teacher11[1]')";
 
-echo $sql_insert_conference;
+//echo $sql_insert_conference;
 
 mysqli_query($conn,$sql_insert_conference) or die(mysqli_error($conn));
 }

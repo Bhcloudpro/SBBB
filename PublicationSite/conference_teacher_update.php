@@ -72,7 +72,7 @@ WebLink="."'".$h."',
 DOI="."'".$g."',
 ConfType="."'".$i."',"."Venue="."'".$j."',"."ConfType="."'".$i."',"."File="."'<a href=$filedest2 target=_blank>view</a>'"." where ConferenceID=".$id; 
 $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-echo $update;
+//echo $update;
 
 
 }
@@ -108,7 +108,7 @@ else{
   DOI="."'".$g."',
   ConfType="."'".$i."',"."Venue="."'".$j."',"."ConfType="."'".$i."'"." where ConferenceID=".$id; 
   $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-  echo $update;
+  //echo $update;
 
 
 }

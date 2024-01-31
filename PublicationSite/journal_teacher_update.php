@@ -84,7 +84,7 @@ PaperType="."'".$s."',
 Keyword="."'".$t."',
 File="."'<a href=$filedest target=_blank>view</a>'"."where JournalID=".$id; 
 $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-echo $update;
+//echo $update;
 
 
 
@@ -178,7 +178,7 @@ publisher="."'".$r."',
 PaperType="."'".$s."',
 Keyword="."'".$t."',"."Ethics="."'<a href=$filedest2 target=_blank>view</a>'"."where JournalID=".$id; 
 $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-echo $update;
+//echo $update;
 
 }
 
@@ -323,7 +323,7 @@ PaperType="."'".$s."',
 Keyword="."'".$t."',
 File="."'<a href=$filedest target=_blank>view</a>',"."Ethics="."'<a href=$filedest2 target=_blank>view</a>'"."where JournalID=".$id; 
 $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-echo $update;
+//echo $update;
 
 }
 
@@ -372,7 +372,7 @@ publisher="."'".$r."',
 PaperType="."'".$s."',
 Keyword="."'".$t."'"." where JournalID=".$id; 
 $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-echo $update;
+//echo $update;
 
 }
   ?>

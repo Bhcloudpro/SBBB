@@ -71,7 +71,7 @@ DOI="."'".$g."',
 WebLink="."'".$h."',
 File="."'<a href=$filedest target=_blank>view</a>',"."BookType="."'".$i."'"." where BookID=".$id; 
 $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-echo $update;
+//echo $update;
 
 }
 
@@ -101,7 +101,7 @@ else{
   DOI="."'".$g."',
   WebLink="."'".$h."',"."BookType="."'".$i."'"." where BookID=".$id; 
   $result = mysqli_query($conn,$update) or die(mysqli_error($conn));
-  echo $update;
+ // echo $update;
 
 }
 
